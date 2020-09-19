@@ -9,10 +9,6 @@
 int main(int argc, char** argv) {
     std::cout << "Hello, World!" << std::endl;
 
-//    oatpp::base::Environment::init();
-
-//    std::cout << "\nEnvironment:\n";
-
     auto connectionProvider = oatpp::network::client::SimpleTCPConnectionProvider::createShared("localhost", 8500);
 
     auto requestExecutor = oatpp::web::client::HttpRequestExecutor::createShared(connectionProvider);
@@ -37,8 +33,6 @@ int main(int argc, char** argv) {
     }
 
     std::cout << "Use count: " << client.use_count() << std::endl;
-
-//    oatpp::base::Environment::destroy();
 
     return 0;
 }
