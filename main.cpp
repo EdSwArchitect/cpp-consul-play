@@ -1,19 +1,10 @@
 #include <iostream>
 
-#include "oatpp/network/server/Server.hpp"
 #include "oatpp-consul/Client.hpp"
 
 #include "oatpp/web/client/HttpRequestExecutor.hpp"
 #include "oatpp/web/server/HttpConnectionHandler.hpp"
-#include "oatpp/web/server/HttpRouter.hpp"
 #include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
-#include "oatpp/network/server/SimpleTCPConnectionProvider.hpp"
-
-#include "oatpp/parser/json/mapping/Serializer.hpp"
-#include "oatpp/parser/json/mapping/Deserializer.hpp"
-
-#include "oatpp/core/macro/component.hpp"
-
 
 int main(int argc, char** argv) {
     std::cout << "Hello, World!" << std::endl;
