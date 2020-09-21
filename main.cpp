@@ -11,6 +11,8 @@ int main(int argc, char** argv) {
 
     auto connectionProvider = oatpp::network::client::SimpleTCPConnectionProvider::createShared("localhost", 8500);
 
+//    oatpp::network::client::SimpleTCPConnectionProvider::
+
     auto requestExecutor = oatpp::web::client::HttpRequestExecutor::createShared(connectionProvider);
 
     auto client = oatpp::consul::Client::createShared(requestExecutor);
